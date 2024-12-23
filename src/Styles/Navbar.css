@@ -12,7 +12,7 @@
     /* Apuntamos tanto a navbar-brand como a navbar-toggle */
     margin-right: 2rem; /* Aumentamos el margen derecho para más espacio */
 }
-  
+
 .nav-link {
     /* Estilamos los enlaces de navegación */
     margin-right: 2rem; /* Aumentamos el margen derecho entre enlaces */

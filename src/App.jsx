@@ -1,30 +1,24 @@
 import './Styles/Navbar.css'
 import ItemListContainer from './Components/ItemListContainer'
 import NavBar from './Components/Navbar'
-import Contador from './Components/Contador'
+import ItemDetailContainer from './Components/ItemDetailContainer'
 import {BrowserRouter, Routes, Route} from "react-router"
+// import Contador from './Components/Contador'
+
 
 
 function App() {
   return (
-    <>
+
+    <BrowserRouter>
       <NavBar />
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/category/:name" element={<ItemListContainer />} />
-        </Routes>
-      </BrowserRouter>
-      
-      {/* <Contador /> */}
-
-
-      {/* <div>
-        <ItemListContainer />
-      </div>
-       */}
-    </>
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:category" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
+   
   )
 }
 

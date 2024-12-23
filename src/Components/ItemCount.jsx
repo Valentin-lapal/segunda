@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-function StateExample () {
+function ItemCount () {
 
     const [contador, setContador] = useState(0)
 
@@ -28,23 +28,20 @@ function StateExample () {
         setContador (contador - 1)
     }
 
-    const reset = () => {
-        setContador(0)
-    }
+    
 
 
 
     return(
         <div>
-            <h1>Contador</h1>
             <p>{contador}</p>
             <div>
                 <button onClick={clickSumar}>+</button>
                 <button onClick={clickRestar}>-</button>
-                <button onClick={reset}>Reset</button>
+                <button>Add to cart</button>
             </div>
         </div>
     )
 }
 
-export default StateExample
+export default ItemCount
