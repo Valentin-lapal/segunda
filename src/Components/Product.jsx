@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import styles from '../styles/Product.module.css'
+import styles from '../Styles/Product.module.css'
 import { useNavigate } from 'react-router';
 
 
@@ -16,7 +16,7 @@ function Product ({item}) {
             <Card style={{ width: '18rem' }} >
                 <Card.Img variant="top" src={item.thumbnail} />
                 <Card.Body className={styles.fondo}>
-                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Title style={{color:"#fff", fontSize:"1.8em"}}>{item.title}</Card.Title>
                     <Card.Title>category: {item.category}</Card.Title>
                     <Card.Text>
                         {item.description}
